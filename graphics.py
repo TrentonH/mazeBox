@@ -12,6 +12,7 @@ background = None
 
 screen = None
 
+
 def update():
 	global screen, background, renderables, width, height
 
@@ -24,6 +25,7 @@ def update():
 		r.render(screen)
 
 	pygame.display.flip()
+
 
 def register(renderable):
 	global renderables
@@ -40,6 +42,7 @@ def init():
 	global screen
 	pygame.display.init()
 	screen = pygame.display.set_mode((width, height))
+
 
 
 def load(file):

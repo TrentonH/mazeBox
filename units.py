@@ -1,5 +1,6 @@
 __author__ = 'Trenton'
 import pygame
+import pixpercol
 
 import graphics
 

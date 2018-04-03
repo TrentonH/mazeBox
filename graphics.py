@@ -16,7 +16,7 @@ screen = None
 def update():
 	global screen, background, renderables, width, height
 
-	screen.fill((0,0,0))
+	screen.fill((0, 0, 0))
 
 	if background:
 		screen.blit(background, (0, 0, width, height))
@@ -32,6 +32,7 @@ def register(renderable):
 	if renderable not in renderables:
 		renderables.append(renderable)
 
+
 def remove(renderable):
 	global renderables
 	if renderable in renderables:
@@ -42,7 +43,6 @@ def init():
 	global screen
 	pygame.display.init()
 	screen = pygame.display.set_mode((width, height))
-
 
 
 def load(file):
